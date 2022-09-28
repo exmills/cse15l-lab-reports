@@ -7,7 +7,6 @@ I love CSE15L!!!!!!!!
 * List
 * List
 * Adding to the list
-***
 ```
 Hello, World
 ```
