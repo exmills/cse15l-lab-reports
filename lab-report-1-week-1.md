@@ -86,6 +86,8 @@ Practice some commands on both the remote server and your own client.
 To move a file using SCP, you first need to have/make a file on your own client (you can make it in VSC).
 
 **My file on my own client:**
+
+
 ![Image](client_file.png)
 
 **Run:**
