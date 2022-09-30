@@ -11,14 +11,12 @@ This guide will cover:
 ```
 
 ## **Step 1 - Downloading Visual Studio Code**
----
 Visit this website and follow the instructions [Visual Studio Code Download](https://code.visualstudio.com/). Once Downloaded, run the application and you should see a screen that looks like this:
 
 
 ![Image](Get_Started_VSC.png)
 
 ## **Step 2 - Remotely Connecting**
----
 If you have a **Windows** Computer, you will need to [Install OpenSSH](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui). Only install OpenSSH **client**, not OpenSSH server. Once installed, you will see it here:
 
 
@@ -54,7 +52,6 @@ Ctrl-D
 
 
 ## **Step 3 - Trying Commands**
----
 
 Practice some commands on both the remote server and your own client. 
 
@@ -85,7 +82,6 @@ Practice some commands on both the remote server and your own client.
 
 
 ## **Step 4 - Moving Files Using SCP**
----
 
 To move a file using SCP, you first need to have/make a file on your own client (you can make it in VSC).
 
@@ -121,7 +117,6 @@ scp file_name.java cs15lfa22__@ieng6.ucsd.edu:~/
 
 
 ## **Step 5: Setting an SSH Key**
----
 Setting an SSH Key will allow you to login without having to type your password! 
 
 **On the client terminal (your computer), you will type the following underlined in pink:**
@@ -150,7 +145,6 @@ scp /Users/your_name/.ssh/id_rsa.pub cs15lfa22__@ieng6.ucsd.edu:~/.ssh/authorize
 
 
 ## **Step 6: Optimizing Remote Running**
----
 **Fun Fact:** you can use the command `ssh cs15lfa22__@ieng6.ucsd.edu` with any command after in quotation marks. It will log you into the remote server, run the command, and then log you out. 
 
 ![Image](log_in_log_out.png)
