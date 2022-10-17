@@ -14,13 +14,13 @@ This guide will cover:
 Visit this website and follow the instructions [Visual Studio Code Download](https://code.visualstudio.com/). Once Downloaded, run the application and you should see a screen that looks like this:
 
 
-![Image](Get_Started_VSC.png)
+![Image](lab_1&2_images/Get_Started_VSC.png)
 
 ## **Step 2 - Remotely Connecting**
 If you have a **Windows** Computer, you will need to [Install OpenSSH](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui). Only install OpenSSH **client**, not OpenSSH server. Once installed, you will see it here:
 
 
-![Image](SSH_Client.png)
+![Image](lab_1&2_images/SSH_Client.png)
 
 
 
@@ -38,7 +38,7 @@ If it is your first time logging in, you will be prompted with a confirmation me
 
 
 
-![Image](Login.png)
+![Image](lab_1&2_images/Login.png)
 
 ***Note**: Mine does not show the yes/no prompting because it was not my first time logging in*.
 
@@ -70,14 +70,14 @@ Practice some commands on both the remote server and your own client.
 
 
 
-![Image](Trying_Commands.png)
+![Image](lab_1&2_images/Trying_Commands.png)
 
 
 
 *This is what happens when I enter the command **ls -lat** on **my client:***
 
 
-![Image](Client_Commands.png)
+![Image](lab_1&2_images/Client_Commands.png)
 
 
 
@@ -88,7 +88,7 @@ To move a file using SCP, you first need to have/make a file on your own client 
 **My file on my own client:**
 
 
-![Image](client_file.png)
+![Image](lab_1&2_images/client_file.png)
 
 **Run:**
 ```
@@ -107,13 +107,13 @@ scp file_name.java cs15lfa22__@ieng6.ucsd.edu:~/
 **My example:**
 
 
-![Image](running_javac.png)
-![Image](scp_transfer.png)
+![Image](lab_1&2_images/running_javac.png)
+![Image](lab_1&2_images/scp_transfer.png)
 
 
 **Next, sign into the remote client (see Step 2 for reference). Once logged in, use `javac` and `java` from before:**
 
-![Image](file_ssh.png)
+![Image](lab_1&2_images/file_ssh.png)
 
 *The file is now on your remote client!*
 
@@ -123,7 +123,7 @@ Setting an SSH Key will allow you to login without having to type your password!
 
 **On the client terminal (your computer), you will type the following underlined in pink:**
 
-![Image](SSH_Keygen.png)
+![Image](lab_1&2_images/SSH_Keygen.png)
 
 ***Note:** for the passphrase, it's most efficient to leave it empty (meaning it will not require a password when you log in). **Ignore everything underlined in red.***
 
@@ -149,11 +149,11 @@ scp /Users/your_name/.ssh/id_rsa.pub cs15lfa22__@ieng6.ucsd.edu:~/.ssh/authorize
 ## **Step 6: Optimizing Remote Running**
 **Fun Fact:** you can use the command `ssh cs15lfa22__@ieng6.ucsd.edu` with any command after in quotation marks. It will log you into the remote server, run the command, and then log you out. 
 
-![Image](log_in_log_out.png)
+![Image](lab_1&2_images/log_in_log_out.png)
 
 **Another Fun Fact:** you can run multiple commands separated by a semicolon on a single line of code. 
 
-![Image](semicolon_single_line.png)
+![Image](lab_1&2_images/semicolon_single_line.png)
 
 
 
