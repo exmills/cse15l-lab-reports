@@ -59,17 +59,29 @@ class SearchEngine {
 ```
 
 **Adding to the List:**
+
+
 ![image](lab_3_images/SearchEngine_Adding.png)
+
+
 /add?s=computerscience calls the handlerequest method. It recognizes /add and adds in "computerscience" to the list of words. 
 
 
 **Searching for "comp":**
+
+
 ![image](lab_3_images/search_comp.png)
+
+
 /search?s=comp calls the handlerequest method. It recognizes /search and searches the list of words for any of them that contain "comp".
 
 
 **Showing the full list of words:**
+
+
 ![image](lab_3_images/full_list.png)
+
+
 the original link calls the handlerequest method and prints the list of words (since there is no text after the "3000")
 
 ## **Part 2**
@@ -78,6 +90,8 @@ the original link calls the handlerequest method and prints the list of words (s
 
 In the method: reversed, there contains a bug! 
 Here is the starter code:
+
+
 ![image](lab_3_images/bugged_code_reversed.png)
 
 
