@@ -1,5 +1,4 @@
-**List of Lab Reports for CSE15L** 
----
+**By Emily Mills**
 
 [tester-file](https://exmills.github.io/cse15l-lab-reports/tester-file.md)
 
