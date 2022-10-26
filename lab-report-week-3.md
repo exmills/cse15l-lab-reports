@@ -127,7 +127,7 @@ In this revised code, it uses a loop to copy over the contents from arr into new
 In the bugged code, newArray is initialized with size 5, but none of the contents are copied over (meaning at every index, the value is 0). When copied into input1, every value in input1 becomes 0. 
 
 
-### **Bug in ListExamples.Java:**
+### **Bug in ListExamples.java:**
 
 
 In the method: filter, there contains a bug! Here is the starter code:
@@ -188,7 +188,7 @@ This line adds the new string to the 0th index (the front of the list), rather t
 
 ![Image](lab_3_images/bug2revised.png)
 
-**Explanation**
+**Explanation:**
 
 In the revised code, string will be added to the end of the list.
 
