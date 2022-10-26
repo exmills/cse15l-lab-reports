@@ -104,7 +104,7 @@ Here is the starter code:
     assertArrayEquals(new int[]{5,4,3,2,1}, ArrayExamples.reversed(input1));
   }
 ```
-**Syptom:** arrays first differed at element [0]; expected:<5> but was:<0>
+**Symptom:** arrays first differed at element [0]; expected:<5> but was:<0>
 
 **The bug:**
 
