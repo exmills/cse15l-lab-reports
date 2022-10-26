@@ -86,7 +86,7 @@ the original link calls the handlerequest method and prints the list of words (s
 
 ## **Part 2**
 ---
-**Bug in ArrayExamples.java:**
+### **Bug in ArrayExamples.java:**
 
 In the method: reversed, there contains a bug! 
 Here is the starter code:
@@ -95,7 +95,7 @@ Here is the starter code:
 ![image](lab_3_images/bugged_code_reversed.png)
 
 
-The failure inducing input/code of the test:
+**The failure inducing input/code of the test:**
 
 ```java
 @Test
@@ -104,9 +104,11 @@ The failure inducing input/code of the test:
     assertArrayEquals(new int[]{5,4,3,2,1}, ArrayExamples.reversed(input1));
   }
 ```
-Syptom: arrays first differed at element [0]; expected:<5> but was:<0>
+**Syptom:** arrays first differed at element [0]; expected:<5> but was:<0>
 
-The bug: the issue with this code is that newArray is initialized with size 5, but rather than copying over the code from arr into newArray, they copy over newArray (which is empty initially) into arr. The issue is that the bugged code returns arr (it should return newArray).
+**The bug:**
+
+The issue with this code is that newArray is initialized with size 5, but rather than copying over the code from arr into newArray, they copy over newArray (which is empty initially) into arr. The issue is that the bugged code returns arr (it should return newArray).
 Here is the revised code:
 ```java 
 static int[] reversed(int[] arr) {
@@ -117,11 +119,84 @@ static int[] reversed(int[] arr) {
     return newArray;
   }
 ```
+
+**Explanation:**
+
 In this revised code, it uses a loop to copy over the contents from arr into newArray (in the reversed order). 
 
 In the bugged code, newArray is initialized with size 5, but none of the contents are copied over (meaning at every index, the value is 0). When copied into input1, every value in input1 becomes 0. 
 
-**Bug in the code**
+
+### **Bug in ListExamples.Java:**
+
+
+In the method: filter, there contains a bug! Here is the starter code:
+
+
+![Image](lab_3_images/bug2.png)
+
+Here is the condition for StringChecker:
+```java
+class Checking implements StringChecker {
+    public boolean checkString(String stringj) {
+        if (stringj.length() == 5) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+}
+```
+
+
+**The failure inducing input/code of the test:**
+```java
+public class ListTests {
+    @Test
+    public void testingFilter() {
+        List<String> newList = new ArrayList<>();
+        newList.add("hello");
+        newList.add("it's");
+        newList.add("nice");
+        newList.add("to");
+        newList.add("meet");
+        newList.add("you");
+        newList.add("emily");
+        List<String> expected = new ArrayList<>();
+        expected.add("hello");
+        expected.add("emily");
+        StringChecker sc = new Checking();
+        assertEquals(expected, ListExamples.filter(newList, sc)); 
+    }
+}
+```
+
+**Symptom:**
+
+![Image](lab_3_images/bug2_symptom.png)
+
+
+
+**The bug:** 
+
+The issue with this code is that it returns the right answer, just in the wrong order. That is because of line 14 in ListExamples.java
+```java
+result.add(0, s);
+```
+This line adds the new string to the 0th index (the front of the list), rather to the end of the list. Here is the revised code (underlined in green):
+
+![Image](lab_3_images/bug2revised.png)
+
+**Explanation**
+
+In the revised code, string will be added to the end of the list.
+
+In the bugged code, the string was added to the front of the list. When it meets the condition of having 5 characters, it will be added to the front of the list. "hello" is added to the front of the list. Then, "emily" is added to the front of the list, resulting in <[emily,hello]>.
+
+
+
+
 
 
 
