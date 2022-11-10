@@ -1,6 +1,6 @@
 ### **Lab Report 3 Week 5** by Emily Mills
 
-## Fist Command: **Find - delete**
+## First Command: **Find - delete**
 **Example 1**
 
 Input:
