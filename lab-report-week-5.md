@@ -6,7 +6,8 @@
 Input:
 
 ![image 1](week_5_images/FIND%20DELETE%201.png)
-Output:
+
+Results:
 
 ![image 2](week_5_images/FIND%20DELETE%201%20OUTPUT.png)
 
@@ -18,7 +19,7 @@ Input:
 
 ![Image 3](week_5_images/FIND%20DELETE%202.png)
 
-Output:
+Results:
 
 ![Image 4](week_5_images/FIND%20DELETE%202%20OUTPUT.png)
 
@@ -30,7 +31,7 @@ Input:
 
 ![Image 5](week_5_images/FIND%20DELETE%203.png)
 
-Output:
+Results:
 
 ![Image 6](week_5_images/FIND%20DELETE%203%20OUTPUT.png)
 
@@ -99,7 +100,7 @@ This command uses *find -size 2k* to find all of the 2 kilobyte files in technic
 
 **Explanation of Find -size**
 
-The command *find -size* can be used with different inputs (b for bytes, k for kilobytes, and M for megabytes) in order to find files of a certain size. 
+The command *find -size* can be used with different inputs (b for bytes, k for kilobytes, M for megabytes, etc.) in order to find files of a certain size. 
 
 
 
