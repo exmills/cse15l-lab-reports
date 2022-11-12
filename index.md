@@ -8,4 +8,4 @@
 
 [Lab Report Week 5](https://exmills.github.io/cse15l-lab-reports/lab-report-week-5.html)
 
-[Lab Report Week 7]((https://exmills.github.io/cse15l-lab-reports/lab-report-week-7.html)
+[Lab Report Week 7](https://exmills.github.io/cse15l-lab-reports/lab-report-week-7.html)
